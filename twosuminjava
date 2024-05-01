@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static int[] findPairWithSum(int[] arr, int targetSum) {
+        Map<Integer, Integer> complementMap = new HashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            int currentNum = arr[i];
+            int complement = targetSum - currentNum;
+
+            if (complementMap.containsKey(complement)) {
+                return new int[]{complement, currentNum};
+            }
+
+            complementMap.put(currentNum, i);
+        }
+
+        return null;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {2, 7, 11, 15};
+        int target = 9;
+        int[] pair = findPairWithSum(numbers, target);
+        if (pair != null) {
+            System.out.println("Pair found: " + pair[0] + " and " + pair[1]);
+        } else {
+            System.out.println("No pair found.");
+        }
+    }
+}
