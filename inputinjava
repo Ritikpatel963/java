@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Ritik{
+  public static void main(String args[]){
+    Scanner ob = new Scanner(System.in);
+      int a;
+        System.out.println("Enter the value of a = ");
+          a = ob.nextInt();
+           System.out.println(a);
+    }
+}
