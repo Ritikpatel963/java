@@ -1,0 +1,22 @@
+#import java.util.*;
+
+class Ritik{
+  pulic class static void main(String args[]){
+    Scanner ob = new Scanner(System.in);
+      int a[5];
+      int b[5];
+        for(i=1;i<=5;i++){
+            a[i] = ob.nextInt();
+          }
+              for(i=1;i<=5;i++){
+                  System.out,println(a[i]);
+                }
+              for(j=1;j<=5;j++){
+                  b[i] = a[i];
+                  }
+                    for(j=1;j<=5;j++){
+                       System.out,println(b[i]);
+                        }
+    }
+}
+                    
