@@ -2,21 +2,16 @@
 
 class Ritik{
   pulic class static void main(String args[]){
-    Scanner ob = new Scanner(System.in);
-      int a[5];
-      int b[5];
-        for(i=1;i<=5;i++){
-            a[i] = ob.nextInt();
-          }
-              for(i=1;i<=5;i++){
-                  System.out,println(a[i]);
-                }
-              for(j=1;j<=5;j++){
-                  b[i] = a[i];
-                  }
-                    for(j=1;j<=5;j++){
-                       System.out,println(b[i]);
-                        }
+    int[] sourceArray = {1, 2, 3, 4, 5};
+        int[] destinationArray = new int[sourceArray.length];
+        
+        // Copy elements using System.arraycopy()
+        System.arraycopy(sourceArray, 0, destinationArray, 0, sourceArray.length);
+        
+        // Print destinationArray to verify
+        for (int num : destinationArray) {
+            System.out.print(num + " ");
+        }
     }
 }
                     
