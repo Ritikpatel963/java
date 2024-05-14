@@ -2,13 +2,14 @@
 
 class Ritik{
   pulic class static void main(String args[]){
+sourceArray = ob.nextInt();
     int[] sourceArray = {1, 2, 3, 4, 5};
         int[] destinationArray = new int[sourceArray.length];
         
         // Copy elements using System.arraycopy()
+        //
         System.arraycopy(sourceArray, 0, destinationArray, 0, sourceArray.length);
         
-        // Print destinationArray to verify
         for (int num : destinationArray) {
             System.out.print(num + " ");
         }
